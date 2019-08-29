@@ -1,0 +1,44 @@
+\documentclass{gma}
+%For abstracts in English uncomment the following line
+%\documentclass[english]{gma}
+
+\synctex=1
+
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{color}
+\newcommand{\tcred}[1]{\textcolor{red}{#1}} % für tmp-Hervorhebungen
+
+\begin{document}
+
+\titel{Lagrangian Model Tools -- Einfache symbolische Modellbildung für mechanische Systeme mit und ohne algebraische Nebenbedingungen}
+\erstautor{}
+\vortragender{C. Knoll}
+\mitautoren{R. Heedt, K. Röbenack}
+\adresse{Institut für Regelungs- und Steuerungstheorie, TU Dresden, Georg-Schumann-Str. 7a,\\ 01187 Dresden, Tel: ++49(0)351/463 33836, E-Mail: max.pritzkoleit@tu-dresden.de}
+
+\maketitle
+% Referenzen
+Die Lagrange-Gleichungen 1. bzw. 2. Art bilden einen üblichen Ausgangspunkt für die Modellbildung insbesondere für mechanische Systeme. Mit ihrer Hilfe können die Bewegungsgleichung nach einem festen Schema auf Basis von analytischen Ausdrücken für die potentielle und kinetische Energie hergeleitet werden. Mit Hilfe Lagrange'scher Multiplikatoren ist es möglich, algebraische Randbedingungen einzubeziehen, sodass z.\,B. auch geschlossene kinematische Ketten vergleichsweise einfach modelliert werden können.
+
+Nachteilig an diesem Zugang ist zwar der mitunter recht hohe Rechenaufwand durch das Bilden vieler partieller Ableitungen, allerdings lassen sich die entsprechenden Schritte des Formalismus mit einem Computer-Algebra-System (CAS) sehr gut automatisieren.
+
+Die auf dem CAS-Paket \textit{sympy} basierende Python"=Toolbox \textit{Lagrangian Model Tools} fasst eine Reihe von Funktionen zusammen, die bei der Anwendung der Lagrange"=Gleichungen immer wieder auftreten. Die wesentliche Eingabe besteht aus einer Geometriebeschreibung des zu modellierenden Systems, d.\,h. die Spezifikation der Lage der Schwerpunkte in Abhängigkeit der gewählten Koordinaten. Daraus lassen sich dann automatisiert die Schwerpunktsgeschwindigkeiten und somit die kinetische Energie bestimmen. Reibung, Potenzial, externe Kräfte und algebraische Randbedingungen könnten optional angegeben werden.
+Das Aufstellen und vereinfachen der Bewegungsgleichungen als DGL-System zweiter Ordnung (bzw. Algebro-DGL-System) geschieht dann vollautomatisch.
+
+Weiterhin bietet die Toolbox Funktionalität an, um die derart vorliegenden Modellgleichungen in für Analyse, Trajektorienplanung, Reglerentwurf und Simulation geeignete Darstellungen zu transformieren z.\,B. mittels kollokierter Eingangs"=Ausgangs"=Linearisierung oder der Berechnung konsistenter Anfangswerte. Zur Vermeidung von Modellierungsfehlern sind zudem Hilfsmittel zur einfachen Visualisierung verfügbar: einerseits zur interaktiven Plausibilitätsprüfung der Geometriebeschreibung, andererseits zur animierten Darstellung von Simulationsergebnissen.
+
+
+
+
+%
+% \def\refname{\normalsize Literaturverzeichnis}
+% \bibliography{local}
+
+\end{document}
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% End:
