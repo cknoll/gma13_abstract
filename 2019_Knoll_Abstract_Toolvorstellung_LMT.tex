@@ -24,7 +24,7 @@ Die Lagrange-Gleichungen 1.\ bzw.\ 2.\ Art bilden einen üblichen Ausgangspunkt 
 
 Nachteilig an diesem Zugang ist zwar der mitunter recht hohe Rechenaufwand durch das Bilden vieler partieller Ableitungen, allerdings lassen sich die entsprechenden Schritte des Formalismus mit einem Computer-Algebra-System (CAS) sehr gut automatisieren.
 
-Die auf dem CAS-Paket \textit{sympy} basierende Python"=Toolbox \textit{Lagrangian Model Tools} fasst eine Reihe von Funktionen zusammen, die bei der Anwendung der Lagrange"=Gleichungen immer wieder auftreten. Die wesentliche Eingabe besteht aus einer Geometriebeschreibung des zu modellierenden Systems, d.\,h.\ die Spezifikation der Lage der Schwerpunkte in Abhängigkeit der gewählten Koordinaten. Daraus lassen sich dann automatisiert die Schwerpunktsgeschwindigkeiten und somit die kinetische Energie bestimmen. Reibung, Potenzial, externe Kräfte und algebraische Randbedingungen könnten optional angegeben werden.
+Die auf dem CAS-Paket \textit{sympy} basierende Python"=Toolbox \textit{Lagrangian Model Tools} \cite{knoll2019symbtools} fasst eine Reihe von Funktionen zusammen, die bei der Anwendung der Lagrange"=Gleichungen immer wieder auftreten. Die wesentliche Eingabe besteht aus einer Geometriebeschreibung des zu modellierenden Systems, d.\,h.\ die Spezifikation der Lage der Schwerpunkte in Abhängigkeit der gewählten Koordinaten. Daraus lassen sich dann automatisiert die Schwerpunktsgeschwindigkeiten und somit die kinetische Energie bestimmen. Reibung, Potenzial, externe Kräfte und algebraische Randbedingungen könnten optional angegeben werden.
 Das Aufstellen und Vereinfachen der Bewegungsgleichungen als DGL-System zweiter Ordnung (bzw.\ Algebro-DGL-System) geschieht dann vollautomatisch.
 
 Weiterhin bietet die Toolbox Funktionalität an, um die derart vorliegenden Modellgleichungen in für Analyse, Trajektorienplanung, Reglerentwurf und Simulation geeignete Darstellungen zu transformieren z.\,B. mittels kollokierter Eingangs"=Ausgangs"=Linearisierung oder der Berechnung konsistenter Anfangswerte. Zur Vermeidung von Modellierungsfehlern sind zudem Hilfsmittel zur einfachen Visualisierung verfügbar: einerseits zur interaktiven Plausibilitätsprüfung der Geometriebeschreibung, andererseits zur animierten Darstellung von Simulationsergebnissen.
@@ -32,9 +32,11 @@ Weiterhin bietet die Toolbox Funktionalität an, um die derart vorliegenden Mode
 
 
 
-%
-% \def\refname{\normalsize Literaturverzeichnis}
-% \bibliography{local}
+
+\def\refname{\normalsize Referenzen}
+\bibliography{local}
+
+% Hinweis: Zur Zeit ist das Modul modeltools noch Teil des Pakets symbtools, woraus sich die hier angegebene Repo-URL begründet. Vermutlich wird sich das bis zur Vorstellung der Toolbox noch ändern. Aber für Interessierte, die nur Zugang zu den Abstracts haben, soll trotzdem eine URL angegeben werden.
 
 \end{document}
 
